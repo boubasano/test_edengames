@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "4fc7130d-d703-4de6-8f26-fd8e9f3fe0f2",
+		"name": "Recruit test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buy car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\" : \"myPlayerId\",\r\n    \"carId\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/recruit-test/buy-car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recruit-test",
+						"buy-car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finished race",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\" : \"myPlayerId\",\r\n    \"raceId\" : 1,\r\n    \"carId\": 1,\r\n    \"victory\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/recruit-test/finished-race",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recruit-test",
+						"finished-race"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {
+		
+	}
+}
